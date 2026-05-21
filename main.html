@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crawly Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="viewport">
+        <!-- Looping canvas -->
+        <div id="canvas">
+                <!-- Hitboxes can be edited by pixel position on canvas -->
+            <button class = "hitbox" data-base-x="300" style="top: 65%;" onclick="openBug('bug1', 'Bug1 does this...')"></button>
+            <button class = "hitbox" data-base-x="1400" style="top: 35%;" onclick="openBug('bug2', 'Bug2 does this...')"></button>
+        </div>
+    </div>
+
+    <div id="bug-info" class="hidden">
+        <div class = "bug-image">
+            <h2 id="bug-name">Bug Name</h2>
+            <p id="bug-description">Bug Description</p>
+            <button onclick="closeBug()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>                
+</body>
+</html>
